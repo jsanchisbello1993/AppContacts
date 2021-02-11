@@ -16,15 +16,18 @@ export default class CrearContacto extends Component {
 
     async componentDidMount(){
         const res = await axios.get('http://localhost:4000/api/contactos');
-        this.setState({contactos: res.data});
+        if (res.data.length > 0){
+            this.setState({contactos: res.data});
+        }
+        
         if (this.props.match.params.id) {
             console.log(this.props.match.params.id)
             const res = await axios.get('http://localhost:4000/api/contactos/' + this.props.match.params.id);
-            console.log(res.data)
             
         }
 
     }
+    
 
     onSubmit = async (e) =>{
         e.preventDefault();

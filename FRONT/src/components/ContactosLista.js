@@ -8,18 +8,19 @@ export default class ContactosLista extends Component {
         contactos: []
     }
 
-    componentDidMount(){
+    async componentDidMount(){
         this.mostrarNotas();
 
     }
 
-    async mostrarNotas(){
+    mostrarNotas = async () => {
         const res = await axios.get('http://localhost:4000/api/contactos');
-        this.setState({contactos: res.data})
+        
+        this.setState({contactos: res.data});
     }
 
     eliminarContacto = async (id) => {
-        await axios.delete('http://localhost:4000/api/contactos/' + id)
+        await axios.delete('http://localhost:4000/api/contactos/' + id);
         this.mostrarNotas();
     }
 

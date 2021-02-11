@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const URI = process.env.MONGOOSE_URI
     ? process.env.MONGOOSE_URI
-    : 'mongodb://localhost/contactAppdb';
+    : 'mongodb+srv://root:root@cluster0.paxrn.mongodb.net/contactAppdb?retryWrites=true&w=majority';
 
 mongoose.connect(URI, {
     useNewUrlParser: true,
