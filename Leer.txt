@@ -1,0 +1,10 @@
+Hola David:
+Al final he hecho lo que he podido.
+El proyecto está en React, pero he usado JavaScript con todo.
+He usado Node.js y express para el backend, era algo que no había hecho en mi vida
+pero estado todo en internet y lo he conseguido. He usado bootstrap en vez de tailwind, no sé si era importante que lo usara,
+no lo he usado nunca, pero ví que era bastante similar al CSS, pero se añade en las class y era un poco mas largo, entonces me centré en React
+He tenido algunos fallos que no he conseguido solucionar.
+Por último, heroku, me daba un fallo que he intentado de diferente formar averiguar la solución, pero me ha superado.
+Te adjunto en el GitHub la foto del error por si te es familiar. Ha sido una gran experiencia hacer este proyecto empezando a ciegas.
+Así que muchas gracias por el Reto porque he aprendido mucho en poco tiempo y me sirve para seguir aprendiendo react por mi cuenta y mejorar.
